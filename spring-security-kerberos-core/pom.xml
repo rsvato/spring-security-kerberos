@@ -4,11 +4,11 @@
 	<parent>
 		<groupId>org.springframework.security.extensions</groupId>
 		<artifactId>spring-security-kerberos-parent</artifactId>
-		<version>1.0.0.CI-SNAPSHOT</version>
+		<version>1.0.0.GD-SNAPSHOT</version>
 	</parent>
 	<groupId>org.springframework.security.extensions</groupId>
 	<artifactId>spring-security-kerberos-core</artifactId>
-	<version>1.0.0.CI-SNAPSHOT</version>
+	<version>1.0.0.GD-SNAPSHOT</version>
 	<name>Spring Security Kerberos Core</name>
 	<packaging>jar</packaging>
 	<description>Spring Security Kerberos Core</description>
@@ -46,6 +46,11 @@
 			<artifactId>spring-security-core</artifactId>
 			<version>${spring.security.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
@@ -66,6 +71,6 @@
 	</dependencies>
 	<properties>
 		<spring.version>3.0.5.RELEASE</spring.version>
-		<spring.security.version>3.0.5.RELEASE</spring.security.version>
+		<spring.security.version>3.1.0.RELEASE</spring.security.version>
 	</properties>
 </project>
